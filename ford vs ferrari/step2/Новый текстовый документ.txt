@@ -1,0 +1,37 @@
+==============================
+EPOCHS       = 8
+BATCH_SIZE   = 64
+LR           = 1e-3
+VALID_SPLIT  = 0.2
+
+CLASS_NUM    = 10
+IMG_SIZE     = 260
+IMG_CHANNELS = 3
+input_shape  = (IMG_SIZE, IMG_SIZE, IMG_CHANNELS)
+
+USE_BIAS     = False
+KERNEL_REG   = 'l2'
+DROPOUT_RATE = 0.25
+EPOCHS_DROP  = 1
+
+p_rescale = 1. / 255
+p_rotation_range = 10
+p_zoom_range = 0.15
+p_width_shift_range = 0.15
+p_height_shift_range = 0.15
+p_brightness_range = [0.5, 1.5]
+p_shear_range = 0.15
+
+math.exp(-0.12)
+With Batch
+Dense(128, use_bias = USE_BIAS, kernel_regularizer = KERNEL_REG, activation = 'relu')
+==============================
+EPOCHS = 10
+LR     = 1e-4
+==============================
+EPOCHS       = 12
+LR           = 1e-5
+EPOCHS_DROP  = 2
+
+if not isinstance(layer, BatchNormalization): 
+==============================
