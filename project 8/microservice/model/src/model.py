@@ -20,7 +20,7 @@ try:
     nlp_ml_model = pickle.load(open('NLP_ML_Model.pkl', 'rb'))
     image_model = pickle.load(open('ImageModel.pkl', 'rb'))
 except:
-    print('Не удалось подключиться к очереди') 
+    print('Не удалось загрузить модели предсказания цены авто') 
     #log
 
 try:
