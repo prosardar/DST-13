@@ -1,0 +1,18 @@
+version: '3.7'
+services:
+    rabbitmq:
+        image: rabbitmq:3-management
+        container_name: rabbitmq
+        hostname: rabbitmq
+        restart: always
+        ports:
+            - 5672:5672
+            - 15672:15672.
+
+    model:
+        build:
+            context: ./model
+        restart: always
+        depends_on:
+            - rabbitmq      
+        command: pip install -r requirements.txt        
